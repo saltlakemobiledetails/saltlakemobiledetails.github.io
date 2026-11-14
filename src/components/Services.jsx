@@ -1,11 +1,30 @@
-import { IconCheck, IconExterior, IconFull, IconInterior, IconPlan } from '../art.jsx'
+import { IconCheck, IconInterior, IconPlan } from '../art.jsx'
 import { BUSINESS, SERVICES } from '../data.js'
 
 const ICONS = {
-  exterior: IconExterior,
   interior: IconInterior,
-  full: IconFull,
   plan: IconPlan,
+}
+
+const isDesktop = () =>
+  typeof window !== 'undefined' && window.matchMedia('(hover: hover) and (pointer: fine)').matches
+
+/**
+ * On touch devices this is a tap-to-call link.
+ * On desktop (hover-capable) it is a flat, non-clickable pill that reveals
+ * the phone number on hover (see .book-btn rules in index.css).
+ */
+function BookButton() {
+  const handleClick = (e) => {
+    if (isDesktop()) e.preventDefault()
+  }
+
+  return (
+    <a href={BUSINESS.phoneHref} className="btn btn-primary book-btn" onClick={handleClick}>
+      <span className="book-label">Book This Package</span>
+      <span className="book-phone">Call {BUSINESS.phone}</span>
+    </a>
+  )
 }
 
 export default function Services() {
@@ -36,10 +55,7 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                {svc.note && <p className="svc-note">{svc.note}</p>}
-                <a href={BUSINESS.phoneHref} className="btn btn-primary">
-                  Book This Package
-                </a>
+                <BookButton />
               </article>
             )
           })}

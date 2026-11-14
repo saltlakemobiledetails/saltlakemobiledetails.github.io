@@ -1,6 +1,6 @@
 const ITEMS = [
   ['💰', 'Best Prices in the Valley', 'We beat every major detailer in Salt Lake County — compare and save $30–$70.'],
-  ['🚐', 'Fully Mobile', 'Our van carries power and pro equipment. For exterior washes we just need access to your outdoor water spigot.'],
+  ['🚐', 'Fully Mobile', 'Our van carries power and pro equipment. Home, office, anywhere — no water hookup needed.'],
   ['✅', 'No Upfront Payment', 'Pay only when the job is done and you love the result.'],
   ['🌿', 'Eco-Friendly Products', 'Safe for your family, your pets, and your paint.'],
 ]

@@ -9,7 +9,7 @@ const STEPS = [
   {
     Icon: IconVan,
     title: '2. We Come to You',
-    text: 'Our fully equipped van arrives with power and professional products. For exterior washes, we simply hook up to your outdoor water spigot — everything else is on us.',
+    text: 'Our fully equipped van arrives with power and professional products — no water hookup needed. Stay home, keep working; we handle everything.',
   },
   {
     Icon: IconSparkleCar,

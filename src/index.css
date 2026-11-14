@@ -319,7 +319,8 @@ a {
 /* ---------- Services ---------- */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 420px));
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -401,11 +402,30 @@ a {
   text-align: center;
 }
 
-.svc-note {
-  font-size: 0.8rem;
-  color: var(--muted);
-  font-style: italic;
-  margin: -0.6rem 0 1.2rem;
+/* Book This Package buttons: tap-to-call on touch devices; on desktop they are
+   flat, non-clickable pills that reveal the phone number on hover. */
+.book-btn .book-phone {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .book-btn {
+    cursor: default;
+    box-shadow: none;
+  }
+
+  .book-btn:hover {
+    transform: none;
+    background: var(--cyan);
+  }
+
+  .book-btn:hover .book-label {
+    display: none;
+  }
+
+  .book-btn:hover .book-phone {
+    display: inline;
+  }
 }
 
 /* ---------- Pricing ---------- */

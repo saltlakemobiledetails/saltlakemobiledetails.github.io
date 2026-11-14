@@ -26,7 +26,7 @@ export function HeroArt() {
     <svg
       viewBox="0 0 560 340"
       role="img"
-      aria-label="Illustration of a mobile detailing van washing a car in a home driveway"
+      aria-label="Illustration of a mobile detailing van parked next to a spotless car in a home driveway"
       className="hero-art"
     >
       {/* sky glow */}
@@ -75,27 +75,10 @@ export function HeroArt() {
         <circle cx="290" cy="268" r="10" fill="#9fb4cc" />
         <rect x="336" y="244" width="12" height="8" rx="3" fill="#ffd166" />
       </g>
-      {/* suds + water */}
-      <circle cx="122" cy="222" r="10" fill="#fff" opacity="0.9" />
-      <circle cx="136" cy="212" r="7" fill="#fff" opacity="0.8" />
-      <circle cx="116" cy="206" r="5" fill="#fff" opacity="0.7" />
       {/* sparkles */}
       <path d="M226 158 l3.4 8 8 3.4 -8 3.4 -3.4 8 -3.4 -8 -8 -3.4 8 -3.4z" fill="#ffd166" />
       <path d="M330 170 l2.4 5.6 5.6 2.4 -5.6 2.4 -2.4 5.6 -2.4 -5.6 -5.6 -2.4 5.6 -2.4z" fill="#fff" />
       <path d="M180 150 l2 4.8 4.8 2 -4.8 2 -2 4.8 -2 -4.8 -4.8 -2 4.8 -2z" fill="#fff" />
-    </svg>
-  )
-}
-
-/** Service icon: foam + water droplet for exterior wash */
-export function IconExterior() {
-  return (
-    <svg viewBox="0 0 48 48" className="svc-icon" aria-hidden="true">
-      <circle cx="24" cy="24" r="22" fill="#e3f6fb" />
-      <path d="M24 10c5 6.5 9 11.5 9 16a9 9 0 1 1-18 0c0-4.5 4-9.5 9-16z" fill="#19c3e6" />
-      <circle cx="20.5" cy="27" r="2.6" fill="#fff" opacity="0.9" />
-      <circle cx="33" cy="13" r="3.4" fill="#bfe9f5" />
-      <circle cx="38" cy="19" r="2.2" fill="#bfe9f5" />
     </svg>
   )
 }
@@ -108,20 +91,6 @@ export function IconInterior() {
       <path d="M19 10c-2 0-3.5 1.6-3.5 3.6 0 4.8 1 12.4 1.6 16.4h12c.4 0 2.9-.3 2.9 2.6S29.6 36 29 36H17" fill="none" stroke="#0b2545" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M20.5 14.5c4 .8 7 3.6 8 8" fill="none" stroke="#19c3e6" strokeWidth="3.2" strokeLinecap="round" />
       <path d="M34 12l1.8 4.2 4.2 1.8-4.2 1.8-1.8 4.2-1.8-4.2-4.2-1.8 4.2-1.8z" fill="#ffd166" />
-    </svg>
-  )
-}
-
-/** Service icon: shield + car for full detail */
-export function IconFull() {
-  return (
-    <svg viewBox="0 0 48 48" className="svc-icon" aria-hidden="true">
-      <circle cx="24" cy="24" r="22" fill="#e3f6fb" />
-      <path d="M24 8l13 5v10c0 8.5-5.5 14.5-13 17-7.5-2.5-13-8.5-13-17V13z" fill="#0b2545" />
-      <path d="M16 27c.8-2.6 2.1-4.9 3.7-6 1.9-1.2 6.7-1.2 8.6 0 1.6 1.1 2.9 3.4 3.7 6" fill="none" stroke="#19c3e6" strokeWidth="2.4" strokeLinecap="round" />
-      <rect x="14" y="26.5" width="20" height="4.6" rx="2.3" fill="#19c3e6" />
-      <circle cx="19" cy="32" r="2.4" fill="#fff" />
-      <circle cx="29" cy="32" r="2.4" fill="#fff" />
     </svg>
   )
 }
