@@ -17,6 +17,10 @@ export default function Contact() {
             ✉️ {BUSINESS.email}
           </a>
         </div>
+        <p className="owner-note">
+          Your call goes straight to {BUSINESS.owner}, the owner &amp; operator — no call centers,
+          ever.
+        </p>
         <p className="hours">Open {BUSINESS.hours} · Serving {BUSINESS.area}</p>
       </div>
     </section>

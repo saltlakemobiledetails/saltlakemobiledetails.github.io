@@ -22,7 +22,7 @@ function BookButton() {
   return (
     <a href={BUSINESS.phoneHref} className="btn btn-primary book-btn" onClick={handleClick}>
       <span className="book-label">Book This Package</span>
-      <span className="book-phone">Call {BUSINESS.phone}</span>
+      <span className="book-phone">Call {BUSINESS.owner} · {BUSINESS.phone}</span>
     </a>
   )
 }

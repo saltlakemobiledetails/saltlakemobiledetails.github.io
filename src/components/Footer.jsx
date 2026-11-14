@@ -22,7 +22,7 @@ export default function Footer() {
         <div>
           <h3>Contact</h3>
           <p>
-            <a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a>
+            <a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a> — ask for {BUSINESS.owner}
             <br />
             <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
             <br />

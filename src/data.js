@@ -1,8 +1,9 @@
 export const BUSINESS = {
   name: 'Salt Lake Mobile Detailing',
-  phone: '(801) 555-0123', // TODO: replace with your real business number
-  phoneHref: 'tel:+18015550123',
-  email: 'hello@saltlakemobiledetailing.com', // TODO: replace with your real email
+  owner: 'Logan',
+  phone: '(509) 359-0917',
+  phoneHref: 'tel:+15093590917',
+  email: 'saltlake.mobiledetails@gmail.com',
   area: 'Salt Lake City & all of Salt Lake County',
   hours: 'Mon–Sat, 8am–7pm',
 }

@@ -37,19 +37,16 @@ Your site will be live at `https://<your-username>.github.io/<repo-name>/`.
 > add it under **Settings → Pages → Custom domain**, and then update the placeholder URLs
 > described below. Google strongly favors real domains for local business rankings.
 
-## Things to update before launch
+## Where things live
 
 | What | Where |
 | --- | --- |
-| Phone number | `BUSINESS` in [src/data.js](src/data.js) — also in [index.html](index.html) JSON-LD (`telephone`) |
-| Email address | `BUSINESS` in [src/data.js](src/data.js) — also in [index.html](index.html) JSON-LD (`email`) |
+| Phone, email, owner name, hours | `BUSINESS` in [src/data.js](src/data.js) — also in [index.html](index.html) JSON-LD (`telephone`, `email`, `founder`, `openingHoursSpecification`) |
 | Site URL | Already set to `https://saltlakemobiledetails.github.io/`. If you buy a custom domain later, update it in [index.html](index.html), [public/robots.txt](public/robots.txt), and [public/sitemap.xml](public/sitemap.xml) |
 | Pricing | `PRICING`, `SERVICES`, and `ADDONS` in [src/data.js](src/data.js) |
-| Service hours | `BUSINESS.hours` in [src/data.js](src/data.js) and `openingHoursSpecification` in [index.html](index.html) |
 
 ## SEO checklist (after deploying)
 
-- [ ] Replace all placeholder URLs/contact info (table above).
 - [ ] Create a free [Google Business Profile](https://business.google.com) — the single
       biggest factor for ranking in local "near me" searches and Google Maps.
 - [ ] Submit the sitemap in [Google Search Console](https://search.google.com/search-console).
