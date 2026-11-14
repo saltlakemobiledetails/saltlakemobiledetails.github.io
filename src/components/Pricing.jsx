@@ -1,4 +1,5 @@
 import { ADDONS, BUSINESS, PRICING } from '../data.js'
+import CallCta from './CallCta.jsx'
 
 export default function Pricing() {
   return (
@@ -53,9 +54,12 @@ export default function Pricing() {
         </ul>
 
         <div className="center">
-          <a href={BUSINESS.phoneHref} className="btn btn-primary btn-lg">
+          <CallCta
+            className="btn btn-primary btn-lg"
+            phoneLabel={`Free quotes — Call ${BUSINESS.owner} · ${BUSINESS.phone}`}
+          >
             Get Your Free Quote — {BUSINESS.phone}
-          </a>
+          </CallCta>
         </div>
       </div>
     </section>

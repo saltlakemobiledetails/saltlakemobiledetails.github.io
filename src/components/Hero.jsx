@@ -1,5 +1,6 @@
 import { HeroArt, IconCheck } from '../art.jsx'
 import { BUSINESS } from '../data.js'
+import CallCta from './CallCta.jsx'
 
 export default function Hero() {
   return (
@@ -26,9 +27,7 @@ export default function Hero() {
             </li>
           </ul>
           <div className="hero-ctas">
-            <a href={BUSINESS.phoneHref} className="btn btn-primary btn-lg">
-              Call {BUSINESS.phone}
-            </a>
+            <CallCta className="btn btn-primary btn-lg">Call {BUSINESS.phone}</CallCta>
             <a href="#pricing" className="btn btn-ghost btn-lg">
               See Pricing
             </a>

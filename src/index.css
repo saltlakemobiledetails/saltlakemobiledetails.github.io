@@ -402,28 +402,30 @@ a {
   text-align: center;
 }
 
-/* Book This Package buttons: tap-to-call on touch devices; on desktop they are
-   flat, non-clickable pills that reveal the phone number on hover. */
-.book-btn .book-phone {
+/* Phone CTAs (CallCta component): tap-to-call with hover animation on touch
+   devices. On desktop they are flat, non-clickable pills that display who
+   answers and the number — statically, or on hover for the `reveal` variant
+   (Book This Package buttons). */
+.call-cta .cta-phone {
   display: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .book-btn {
+  .call-cta,
+  .call-cta:hover {
     cursor: default;
     box-shadow: none;
-  }
-
-  .book-btn:hover {
     transform: none;
     background: var(--cyan);
   }
 
-  .book-btn:hover .book-label {
+  .call-cta:not(.call-cta-reveal) .cta-label,
+  .call-cta-reveal:hover .cta-label {
     display: none;
   }
 
-  .book-btn:hover .book-phone {
+  .call-cta:not(.call-cta-reveal) .cta-phone,
+  .call-cta-reveal:hover .cta-phone {
     display: inline;
   }
 }

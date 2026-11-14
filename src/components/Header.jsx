@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { LogoMark } from '../art.jsx'
 import { BUSINESS } from '../data.js'
+import CallCta from './CallCta.jsx'
 
 const LINKS = [
   ['#services', 'Services'],
@@ -30,9 +31,9 @@ export default function Header() {
               {label}
             </a>
           ))}
-          <a href={BUSINESS.phoneHref} className="btn btn-primary nav-cta" onClick={() => setOpen(false)}>
+          <CallCta className="btn btn-primary nav-cta" onClick={() => setOpen(false)}>
             Book Now
-          </a>
+          </CallCta>
         </nav>
 
         <button
